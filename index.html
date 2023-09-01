@@ -3,34 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hooray Toys</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    
+  
 </head>
-
+<style>
+  
+label {
+  color: black;
+  
+}
+</style>
 <body>
   
     <header class="p-3 text-bg-success">
-        <div class="container">
+        <div class="container-fluid">
+          
           <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-                <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
-            </a>
+
+            <div>
+              <img src="website-img/logo.png" width=200 alt="logo" class="img-fluid" >
+            </div>
             
-            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                <img src="toylogo.png" width=200 alt="logo" class="img-fluid p-3" >
-              <li><a href="#" class="nav-link px-2 text-white">Home</a></li>
-              <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
-              <li><a href="#" class="nav-link px-2 text-white">Shop by Age</a></li>
-              <li><a href="#" class="nav-link px-2 text-white">Shop by Category</a></li>
-              <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 my-lg-auto justify-content-center ">
+              <li><a href="#" class="nav-link px-4 text-white active">Home</a></li>
+              <li><a href="#" class="nav-link px-4 text-white">Features</a></li>
+              <li><div class="dropdown px-4">
+                <button class="btn btn-success dropdown-toggle" type="button"  id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Shop by Age
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="product.html">0-2 years</a>
+                  <a class="dropdown-item" href="#">3-5 years</a>
+                  <a class="dropdown-item" href="#">5+ years</a>
+                </div>
+              </div>
+            </li>
+              <li><div class="dropdown px-4">
+                <button class=" btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Shop by Category 
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">games & puzzles</a>
+                  <a class="dropdown-item" href="#">learning toys</a>
+                  <a class="dropdown-item" href="#">STEM toys</a>
+                  <a class="dropdown-item" href="#">arts & crafts</a>
+                  <a class="dropdown-item" href="#">outdoor play</a>
+                </div>
+              </div></li>
+              <li><a href="#about" class="nav-link px-4 text-white">About</a></li>
               
             </ul>
-    
+            
             <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-              <input type="search" class="form-control form-control-dark text-bg-light" placeholder="Search..." aria-label="Search">
+              <input type="search" class="form-control form-control-dark text-bg-light" placeholder="Search product..." aria-label="Search">
             </form>
            
            <!-- Modal trigger button -->
@@ -42,14 +70,27 @@
            <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
            <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
-                <div class="modal-content">
+                <div class="modal-content" role="form">
                     <div class="modal-header">
                         <h5 class="modal-title" id="modalTitleId">Modal title</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
+
                     <div class="modal-body">
-                        Body
-                    </div>
+                      <div class="mb-3">
+                        <label for="email">Email</label>  
+                        <input type="text" class="form-control" id="email">
+                      </div>
+
+                    
+                        <div class="mb-3">    
+                          <label for="password">Password</label>
+                          <input type="password" class="form-control" id="password">
+      
+                        </div>
+                   </div>
+
+                    
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sign In</button>
                         <button type="button" class="btn btn-secondary">Creat Account</button>
@@ -71,21 +112,21 @@
 
       <div class="container">
         <div class="row">
-            <img src="toys.avif" alt="toys" class="img-fluid img-thumbnail my-3">
+            <img class="img-fluid img-thumbnail my-3" src="website-img/toys.avif" alt="toys" >
         </div>
 
         <div class="row">            
             <div class="col-sm-4">
-               <img class="my-3 img-thumbnail align-self-center" src="bead.avif" alt="bead">
+               <img class="my-3 img-thumbnail align-self-center" src="website-img/bead.avif" alt="bead">
             </div>
             <div class="col-sm-4">
-                <div class="media">
-                     <img class="my-3 img-thumbnail align-self-center" src="stacking toys.avif" alt="pizz one">
-                 </div>
+                
+                     <img class="my-3 img-thumbnail align-self-center" src="website-img/stacking toys.avif" alt="stacking toys">
+    
             </div>
             <div class="col-sm-4">
              
-                     <img class="my-3 img-thumbnail align-self-center" src="super mario.avif" alt="pizz one">
+                     <img class="my-3 img-thumbnail align-self-center" src="website-img/super mario.avif" alt="super mario toy">
             
             </div>
             <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
@@ -108,35 +149,51 @@
                 <div class="col mb-3">
                   <h5>Customer Service</h5>
                   <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">contact us</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">track my order</a></li>
+                    <li class="nav-item mb-2"><a href="contactus.html" class="nav-link p-0 text-muted">Contact us</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Track My Order</a></li>
                   </ul>
                 </div>
             
-                <div class="col mb-3">
+                <div class="col mb-3" id="about">
                   <h5>About</h5>
                   <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">about us</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">privacy</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">terms</a></li>
+                    <li class="nav-item mb-2"><a href="aboutus.html" class="nav-link p-0 text-muted">About Us</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacy</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Terms</a></li>
         
                   </ul>
                 </div>
             
             </footer>
 
-
+            <hr/>
             <div>
-            <i class="bi bi-facebook" ></i> 
-            <i class="bi bi-twitter" ></i>
-            <i class="bi bi-youtube" ></i>
-            <i class="bi bi-instagram" ></i>
-            <i class="bi bi-tiktok"></i>
-            <i class="bi bi-wechat"></i>
-            </div>  
+              <a class=" p-2 icon-link link-dark link-underline-success link-underline-opacity-25" href="https://www.facebook.com/">
+               <i class="bi bi-facebook " style="font-size:30px" ></i> 
+              </a>
+              <a class=" p-2 icon-link link-dark link-underline-success link-underline-opacity-25" href="https://twitter.com/home?lang=en">
+               <i class="bi bi-twitter" style="font-size:30px" ></i>
+              </a>
+              <a class="p-2 icon-link link-dark link-underline-success link-underline-opacity-25" href="https://www.instagram.com/">
+                <i class="bi bi-instagram " style="font-size:30px" ></i>
+               </a>
+               <a class="p-2 icon-link link-dark link-underline-success link-underline-opacity-25" href="https://www.tiktok.com/en/">
+                <i class="bi bi-tiktok" style="font-size:30px" ></i>
+               </a>
+               <a class="p-2 icon-link link-dark link-underline-success link-underline-opacity-25" href="https://web.wechat.com/?lang=en">
+                <i class="bi bi-wechat" style="font-size:30px" ></i>
+               </a>
+               <a class="p-2 icon-link link-dark link-underline-success link-underline-opacity-25" href="https://www.youtube.com/">
+                <i class="bi bi-youtube " style="font-size:30px" ></i>
+               </a>
+            
+            </div>
+            
+            <a class="icon-link icon-link-hover link-dark link-underline-success link-underline-opacity-25" href="#">
+              </a>
            
             
-            <p>© 2023 Horray Toys Inc. All Rights Reserved.</p>
+            <p>© 2023 Hooray Toys Inc. All Rights Reserved.</p>
                   
              
 
