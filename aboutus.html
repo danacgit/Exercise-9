@@ -4,9 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  
 </head>
+<style>
+  
+l  
+label {
+  color: black;
+  
+}
+ 
+</style>
+<body>
+  
+    <header class="text-bg-success">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg">
+              <a class="navbar-brand" href="index.html"><img src="website-img/logo.png" height=50 alt="Logo"></a>
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+             </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+           <ul class="navbar-nav ml-auto col-12 col-lg-auto me-lg-auto mb-2 my-lg-auto justify-content-center">
+                 
+            <li>
+               <div class="dropdown">
+                <button class="btn btn-success dropdown-toggle mt-3" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        About 
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="aboutus.html">About Us</a>
+                  <a class="dropdown-item" href="#">Privacy</a>
+                  <a class="dropdown-item" href="#">Terms</a>
+                </div>
+              </div>
+              
+            </li>
+            <li>
+            <div class="dropdown">
+              <button class="btn btn-success dropdown-toggle mt-3 " type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Shop by Age
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+               <a class="dropdown-item" href="product.html">0-2 years</a>
+               <a class="dropdown-item" href="#">3-5 years</a>
+               <a class="dropdown-item" href="#">5+ years</a>
+              </div>
+            </div>
+            </li>
+            <li>
+              <div class="dropdown">
+                <button class="btn btn-success dropdown-toggle mt-3" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Shop by Category 
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">games & puzzles</a>
+                  <a class="dropdown-item" href="#">learning toys</a>
+                  <a class="dropdown-item" href="#">STEM toys</a>
+                  <a class="dropdown-item" href="#">arts & crafts</a>
+                  <a class="dropdown-item" href="#">outdoor play</a>
+                </div>
+              </div>
+              
+            </li>
+           </ul>
+            </div>
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 mt-3 ml-auto" role="search">
+              <input type="search" class="form-control form-control-dark text-bg-light" placeholder="Search product..." aria-label="Search">
+            </form>
+           
+           <!-- Modal trigger button -->
+           <button type="button" class="btn btn-light mt-3" data-bs-toggle="modal" data-bs-target="#modalId">
+             Login
+           </button>
+      
+           <!-- Modal Body -->
+           <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+           <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+                <div class="modal-content" role="form">
+                    <div class="modal-header">
+                      <label for="title">Login or Sign Up</label>
+                        <h5 class="modal-title " id="modalTitleId">Modal title</h5>
+                       
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                             
+                          </div>
+                    
+                    <div class="modal-body">
+                      <div class="mb-3">
+                        <label for="email">Email</label>  
+                        <input type="text" class="form-control" id="email">
+                      </div>
 
-<body style="background-color: bisque;">
+                    
+                        <div class="mb-3">    
+                          <label for="password">Password</label>
+                          <input type="password" class="form-control" id="password">
+      
+                        </div>
+                   </div>
+
+                    
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sign In</button>
+                        <button type="button" class="btn btn-secondary">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+           </div>
+           
+           
+           <!-- Optional: Place to the bottom of scripts -->
+           <script>
+            const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
+           
+           </script>
+          </div>
+        </div>
+      </header>
+
+                      
+
     <h1>Welcome to Hooray Toys!</h1> 
     <p>We're so excited to introduce you to our line of educational toys and games for kids. At Hooray Toys, 
         we believe play is the best way for children to learn and develop. 
